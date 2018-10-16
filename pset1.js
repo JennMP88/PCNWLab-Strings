@@ -16,6 +16,7 @@
     @example - makeEven('john'); // 'john'
 */
 
+/*
 const makeEven = str => {
     //if string="odd"
     //store number of characters in str 
@@ -30,7 +31,7 @@ const makeEven = str => {
 console.log (makeEven ("hello")); //this ia sample str
 console.log (makeEven ("odd")); //this ia sample str
 console.log (makeEven ("even")); //this ia sample str
-
+*/
 
 /* 2
     @func getLastChar
@@ -39,16 +40,13 @@ console.log (makeEven ("even")); //this ia sample str
     @desc - return the last character in string
     @example - getLastChar('taq'); // 'q'
 */
-/*
-const getLastChar = (str) => {
 
-    if ((str.length % 2 === 0) ){
-        return str;
-    }
-    return str;
+const getLastChar = (str) => {
+    const charLetter = (str[str.length - 1]);
+    return charLetter;
 }
-console.log(getLastChar('taq'));  //'taq#'
-console.log(getLastChar('john')); //'john' */
+console.log(getLastChar ("hello"));
+
 
 /* 3
     @func get3rdChar
@@ -58,6 +56,7 @@ console.log(getLastChar('john')); //'john' */
     @example - get3rdChar('taq'); // 'q'
     @example - get3rdChar('mo'); // 'not enough characters!'
 */
+
 
 /* 4
     @func get3rdCharFromEnd
