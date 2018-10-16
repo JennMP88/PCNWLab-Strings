@@ -41,6 +41,7 @@ console.log (makeEven ("even")); //this ia sample str
     @example - getLastChar('taq'); // 'q'
 */
 
+
 const getLastChar = (str) => {
     const charLetter = (str[str.length - 1]);
     return charLetter;
@@ -57,6 +58,11 @@ console.log(getLastChar ("hello"));
     @example - get3rdChar('mo'); // 'not enough characters!'
 */
 
+ const get3rdChar = (str) => {
+    const thirdChar = (str[2].toLowerCase());
+    return thirdChar;
+}
+console.log(get3rdChar("jeni"));
 
 /* 4
     @func get3rdCharFromEnd
