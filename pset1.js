@@ -5,7 +5,7 @@
  */
  
  
-/* 1
+/* 
     @func makeEven
     @param {string} str
     @returns {string}
@@ -16,6 +16,21 @@
     @example - makeEven('john'); // 'john'
 */
 
+const makeEven = str => {
+    //if string="odd"
+    //store number of characters in str 
+    const numChars = str.length; 
+    //check if number of characters is even 
+    if (numChars  % 2==0) { //3%2===0; 1===0;=>false 
+        return str;//ignore
+    }
+    //add # IF above is false
+     return str + "#"; //"odd" +"#" => "odd#
+}  //or you can do string literal or string interpolation = `${"str"}`
+console.log (makeEven ("hello")); //this ia sample str
+console.log (makeEven ("odd")); //this ia sample str
+console.log (makeEven ("even")); //this ia sample str
+
 
 /* 2
     @func getLastChar
@@ -24,6 +39,16 @@
     @desc - return the last character in string
     @example - getLastChar('taq'); // 'q'
 */
+/*
+const getLastChar = (str) => {
+
+    if ((str.length % 2 === 0) ){
+        return str;
+    }
+    return str;
+}
+console.log(getLastChar('taq'));  //'taq#'
+console.log(getLastChar('john')); //'john' */
 
 /* 3
     @func get3rdChar
